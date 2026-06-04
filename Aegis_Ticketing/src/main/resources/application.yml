@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: JDBC:mysql://localhost:3306/aegis_ticketing
+    username: root
+    password:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    Hikari:
+      maximum-pool-size: 20
+      minimum-idle: 10
+      connection-timeout: 30000
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
