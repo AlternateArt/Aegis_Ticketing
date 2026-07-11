@@ -1,0 +1,116 @@
+2026-07-11T18:38:11.786+05:30  INFO 31620 --- [main] c.Aegis_Ticketing.Test.ConcurrencyTest   : Starting ConcurrencyTest using Java 21.0.8 with PID 31620 (started by ASUS in E:\Aegis_Ticketing\Aegis_Ticketing)
+2026-07-11T18:38:11.787+05:30  INFO 31620 --- [main] c.Aegis_Ticketing.Test.ConcurrencyTest   : No active profile set, falling back to 1 default profile: "default"
+2026-07-11T18:38:12.538+05:30  INFO 31620 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-07-11T18:38:12.539+05:30  INFO 31620 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-11T18:38:12.736+05:30  INFO 31620 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 190 ms. Found 2 JPA repository interfaces.
+2026-07-11T18:38:12.753+05:30  INFO 31620 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-07-11T18:38:12.753+05:30  INFO 31620 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-07-11T18:38:12.765+05:30  INFO 31620 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface concurrency_Control.Aegis_Ticketing.Repositories.BookingRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-07-11T18:38:12.765+05:30  INFO 31620 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface concurrency_Control.Aegis_Ticketing.Repositories.SeatRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-07-11T18:38:12.766+05:30  INFO 31620 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2026-07-11T18:38:13.551+05:30  INFO 31620 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2026-07-11T18:38:13.565+05:30  INFO 31620 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-11T18:38:13.565+05:30  INFO 31620 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2026-07-11T18:38:13.636+05:30  INFO 31620 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-07-11T18:38:13.636+05:30  INFO 31620 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1834 ms
+2026-07-11T18:38:13.921+05:30  INFO 31620 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-11T18:38:13.969+05:30  INFO 31620 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2026-07-11T18:38:13.998+05:30  INFO 31620 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-07-11T18:38:14.225+05:30  INFO 31620 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-11T18:38:14.245+05:30  INFO 31620 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-07-11T18:38:14.545+05:30  INFO 31620 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4f629aa4
+2026-07-11T18:38:14.546+05:30  INFO 31620 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-07-11T18:38:15.285+05:30  INFO 31620 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-11T18:38:15.328+05:30  INFO 31620 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-11T18:38:15.829+05:30  INFO 31620 --- [main] org.redisson.Version                     : Redisson 3.27.0
+2026-07-11T18:38:16.136+05:30  INFO 31620 --- [redisson-netty-1-5] o.redisson.connection.ConnectionsHolder  : 1 connections initialized for localhost/127.0.0.1:6379
+2026-07-11T18:38:16.225+05:30  INFO 31620 --- [redisson-netty-1-20] o.redisson.connection.ConnectionsHolder  : 24 connections initialized for localhost/127.0.0.1:6379
+2026-07-11T18:38:16.331+05:30  WARN 31620 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-11T18:38:17.123+05:30  INFO 31620 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-07-11T18:38:17.219+05:30  INFO 31620 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 52931 (http) with context path '/'
+2026-07-11T18:38:17.229+05:30  INFO 31620 --- [main] c.Aegis_Ticketing.Test.ConcurrencyTest   : Started ConcurrencyTest in 5.729 seconds (process running for 6.655)
+2026-07-11T18:38:18.063+05:30  INFO 31620 --- [http-nio-auto-1-exec-7] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-11T18:38:18.065+05:30  INFO 31620 --- [http-nio-auto-1-exec-7] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-07-11T18:38:18.066+05:30  INFO 31620 --- [http-nio-auto-1-exec-7] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-07-11T18:38:18.127+05:30  INFO 31620 --- [http-nio-auto-1-exec-8] c.A.Controllers.TicketController         : Attempting to book seat: A13 for user: User-9
+2026-07-11T18:38:18.127+05:30  INFO 31620 --- [http-nio-auto-1-exec-6] c.A.Controllers.TicketController         : Attempting to book seat: A13 for user: User-8
+2026-07-11T18:38:18.127+05:30  INFO 31620 --- [http-nio-auto-1-exec-3] c.A.Controllers.TicketController         : Attempting to book seat: A13 for user: User-4
+2026-07-11T18:38:18.127+05:30  INFO 31620 --- [http-nio-auto-1-exec-9] c.A.Controllers.TicketController         : Attempting to book seat: A13 for user: User-5
+2026-07-11T18:38:18.127+05:30  INFO 31620 --- [http-nio-auto-1-exec-5] c.A.Controllers.TicketController         : Attempting to book seat: A13 for user: User-1
+2026-07-11T18:38:18.127+05:30  INFO 31620 --- [http-nio-auto-1-exec-1] c.A.Controllers.TicketController         : Attempting to book seat: A13 for user: User-2
+2026-07-11T18:38:18.127+05:30  INFO 31620 --- [http-nio-auto-1-exec-2] c.A.Controllers.TicketController         : Attempting to book seat: A13 for user: User-7
+2026-07-11T18:38:18.127+05:30  INFO 31620 --- [http-nio-auto-1-exec-10] c.A.Controllers.TicketController         : Attempting to book seat: A13 for user: User-6
+2026-07-11T18:38:18.127+05:30  INFO 31620 --- [http-nio-auto-1-exec-4] c.A.Controllers.TicketController         : Attempting to book seat: A13 for user: User-3
+2026-07-11T18:38:18.127+05:30  INFO 31620 --- [http-nio-auto-1-exec-7] c.A.Controllers.TicketController         : Attempting to book seat: A13 for user: User-0
+2026-07-11T18:38:18.332+05:30  INFO 31620 --- [http-nio-auto-1-exec-7] c.A.Controllers.TicketController         : Successfully booked seat: A13 for user: User-0
+2026-07-11T18:38:18.338+05:30  INFO 31620 --- [http-nio-auto-1-exec-8] c.A.Controllers.TicketController         : Successfully booked seat: A13 for user: User-9
+2026-07-11T18:38:18.343+05:30  WARN 31620 --- [http-nio-auto-1-exec-1] c.A.Controllers.TicketController         : Booking failed for user User-2: Sorry, this seat was just booked by someone else!
+2026-07-11T18:38:18.347+05:30  WARN 31620 --- [http-nio-auto-1-exec-4] c.A.Controllers.TicketController         : Booking failed for user User-3: Sorry, this seat was just booked by someone else!
+2026-07-11T18:38:18.354+05:30  WARN 31620 --- [http-nio-auto-1-exec-3] c.A.Controllers.TicketController         : Booking failed for user User-4: Sorry, this seat was just booked by someone else!
+2026-07-11T18:38:18.362+05:30  WARN 31620 --- [http-nio-auto-1-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1213, SQLState: 40001
+2026-07-11T18:38:18.362+05:30 ERROR 31620 --- [http-nio-auto-1-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : Deadlock found when trying to get lock; try restarting transaction
+2026-07-11T18:38:18.367+05:30  WARN 31620 --- [http-nio-auto-1-exec-5] c.A.Controllers.TicketController         : Booking failed for user User-1: Sorry, this seat was just booked by someone else!
+2026-07-11T18:38:18.371+05:30  WARN 31620 --- [http-nio-auto-1-exec-2] c.A.Controllers.TicketController         : Booking failed for user User-7: could not execute statement [Deadlock found when trying to get lock; try restarting transaction] [update seats set price=?,seat_number=?,status=? where id=?]; SQL [update seats set price=?,seat_number=?,status=? where id=?]
+2026-07-11T18:38:18.377+05:30  WARN 31620 --- [http-nio-auto-1-exec-10] c.A.Controllers.TicketController         : Booking failed for user User-6: Sorry, this seat was just booked by someone else!
+2026-07-11T18:38:18.384+05:30  WARN 31620 --- [http-nio-auto-1-exec-6] c.A.Controllers.TicketController         : Booking failed for user User-8: Sorry, this seat was just booked by someone else!
+2026-07-11T18:38:18.424+05:30  WARN 31620 --- [http-nio-auto-1-exec-9] c.A.Controllers.TicketController         : Booking failed for user User-5: Sorry, this seat was just booked by someone else!
+2026-07-11T18:38:18.462+05:30  INFO 31620 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-11T18:38:18.464+05:30  INFO 31620 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-07-11T18:38:18.472+05:30  INFO 31620 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-07-11T18:43:02.336+05:30  INFO 27700 --- [main] c.Aegis_Ticketing.Test.ConcurrencyTest   : Starting ConcurrencyTest using Java 21.0.8 with PID 27700 (started by ASUS in E:\Aegis_Ticketing\Aegis_Ticketing)
+2026-07-11T18:43:02.338+05:30  INFO 27700 --- [main] c.Aegis_Ticketing.Test.ConcurrencyTest   : No active profile set, falling back to 1 default profile: "default"
+2026-07-11T18:43:03.119+05:30  INFO 27700 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-07-11T18:43:03.120+05:30  INFO 27700 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-11T18:43:03.308+05:30  INFO 27700 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 182 ms. Found 2 JPA repository interfaces.
+2026-07-11T18:43:03.323+05:30  INFO 27700 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-07-11T18:43:03.325+05:30  INFO 27700 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-07-11T18:43:03.337+05:30  INFO 27700 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface concurrency_Control.Aegis_Ticketing.Repositories.BookingRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-07-11T18:43:03.337+05:30  INFO 27700 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface concurrency_Control.Aegis_Ticketing.Repositories.SeatRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-07-11T18:43:03.337+05:30  INFO 27700 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2026-07-11T18:43:04.111+05:30  INFO 27700 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2026-07-11T18:43:04.124+05:30  INFO 27700 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-11T18:43:04.124+05:30  INFO 27700 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2026-07-11T18:43:04.191+05:30  INFO 27700 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-07-11T18:43:04.192+05:30  INFO 27700 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1839 ms
+2026-07-11T18:43:04.487+05:30  INFO 27700 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-11T18:43:04.533+05:30  INFO 27700 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2026-07-11T18:43:04.560+05:30  INFO 27700 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-07-11T18:43:04.786+05:30  INFO 27700 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-11T18:43:04.805+05:30  INFO 27700 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-07-11T18:43:05.098+05:30  INFO 27700 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1b868ef0
+2026-07-11T18:43:05.100+05:30  INFO 27700 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-07-11T18:43:05.794+05:30  INFO 27700 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-11T18:43:05.823+05:30  INFO 27700 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-11T18:43:06.204+05:30  INFO 27700 --- [main] org.redisson.Version                     : Redisson 3.27.0
+2026-07-11T18:43:06.471+05:30  INFO 27700 --- [redisson-netty-1-5] o.redisson.connection.ConnectionsHolder  : 1 connections initialized for localhost/127.0.0.1:6379
+2026-07-11T18:43:06.569+05:30  INFO 27700 --- [redisson-netty-1-20] o.redisson.connection.ConnectionsHolder  : 24 connections initialized for localhost/127.0.0.1:6379
+2026-07-11T18:43:06.677+05:30  WARN 27700 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-11T18:43:07.442+05:30  INFO 27700 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-07-11T18:43:07.521+05:30  INFO 27700 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 63877 (http) with context path '/'
+2026-07-11T18:43:07.532+05:30  INFO 27700 --- [main] c.Aegis_Ticketing.Test.ConcurrencyTest   : Started ConcurrencyTest in 5.479 seconds (process running for 6.329)
+2026-07-11T18:43:08.095+05:30  INFO 27700 --- [http-nio-auto-1-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-11T18:43:08.095+05:30  INFO 27700 --- [http-nio-auto-1-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-07-11T18:43:08.096+05:30  INFO 27700 --- [http-nio-auto-1-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-07-11T18:43:08.162+05:30  INFO 27700 --- [http-nio-auto-1-exec-5] c.A.Controllers.TicketController         : Attempting to book seat: A13 for user: User-8
+2026-07-11T18:43:08.162+05:30  INFO 27700 --- [http-nio-auto-1-exec-6] c.A.Controllers.TicketController         : Attempting to book seat: A13 for user: User-0
+2026-07-11T18:43:08.162+05:30  INFO 27700 --- [http-nio-auto-1-exec-2] c.A.Controllers.TicketController         : Attempting to book seat: A13 for user: User-6
+2026-07-11T18:43:08.162+05:30  INFO 27700 --- [http-nio-auto-1-exec-3] c.A.Controllers.TicketController         : Attempting to book seat: A13 for user: User-9
+2026-07-11T18:43:08.162+05:30  INFO 27700 --- [http-nio-auto-1-exec-4] c.A.Controllers.TicketController         : Attempting to book seat: A13 for user: User-3
+2026-07-11T18:43:08.162+05:30  INFO 27700 --- [http-nio-auto-1-exec-8] c.A.Controllers.TicketController         : Attempting to book seat: A13 for user: User-7
+2026-07-11T18:43:08.162+05:30  INFO 27700 --- [http-nio-auto-1-exec-10] c.A.Controllers.TicketController         : Attempting to book seat: A13 for user: User-5
+2026-07-11T18:43:08.162+05:30  INFO 27700 --- [http-nio-auto-1-exec-9] c.A.Controllers.TicketController         : Attempting to book seat: A13 for user: User-2
+2026-07-11T18:43:08.162+05:30  INFO 27700 --- [http-nio-auto-1-exec-7] c.A.Controllers.TicketController         : Attempting to book seat: A13 for user: User-1
+2026-07-11T18:43:08.162+05:30  INFO 27700 --- [http-nio-auto-1-exec-1] c.A.Controllers.TicketController         : Attempting to book seat: A13 for user: User-4
+2026-07-11T18:43:08.319+05:30  WARN 27700 --- [http-nio-auto-1-exec-10] c.A.Controllers.TicketController         : Booking failed for user User-5: Sorry, this seat was just booked by someone else!
+2026-07-11T18:43:08.325+05:30  WARN 27700 --- [http-nio-auto-1-exec-7] c.A.Controllers.TicketController         : Booking failed for user User-1: Sorry, this seat was just booked by someone else!
+2026-07-11T18:43:08.332+05:30  WARN 27700 --- [http-nio-auto-1-exec-5] c.A.Controllers.TicketController         : Booking failed for user User-8: Sorry, this seat was just booked by someone else!
+2026-07-11T18:43:08.339+05:30  WARN 27700 --- [http-nio-auto-1-exec-6] c.A.Controllers.TicketController         : Booking failed for user User-0: Sorry, this seat was just booked by someone else!
+2026-07-11T18:43:08.346+05:30  WARN 27700 --- [http-nio-auto-1-exec-1] c.A.Controllers.TicketController         : Booking failed for user User-4: Sorry, this seat was just booked by someone else!
+2026-07-11T18:43:08.356+05:30  WARN 27700 --- [http-nio-auto-1-exec-9] c.A.Controllers.TicketController         : Booking failed for user User-2: Sorry, this seat was just booked by someone else!
+2026-07-11T18:43:08.364+05:30  WARN 27700 --- [http-nio-auto-1-exec-3] c.A.Controllers.TicketController         : Booking failed for user User-9: Sorry, this seat was just booked by someone else!
+2026-07-11T18:43:08.371+05:30  WARN 27700 --- [http-nio-auto-1-exec-2] c.A.Controllers.TicketController         : Booking failed for user User-6: Sorry, this seat was just booked by someone else!
+2026-07-11T18:43:08.376+05:30  WARN 27700 --- [http-nio-auto-1-exec-4] c.A.Controllers.TicketController         : Booking failed for user User-3: Sorry, this seat was just booked by someone else!
+2026-07-11T18:43:08.383+05:30  WARN 27700 --- [http-nio-auto-1-exec-8] c.A.Controllers.TicketController         : Booking failed for user User-7: Sorry, this seat was just booked by someone else!
+2026-07-11T18:43:08.431+05:30  INFO 27700 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-11T18:43:08.433+05:30  INFO 27700 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-07-11T18:43:08.444+05:30  INFO 27700 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
