@@ -2,7 +2,7 @@ spring:
   datasource:
     url: JDBC:mysql://localhost:3306/aegis_ticketing
     username: root
-    password:
+    password: SqlConnector
     driver-class-name: com.mysql.cj.jdbc.Driver
     Hikari:
       maximum-pool-size: 20
@@ -12,3 +12,8 @@ spring:
     hibernate:
       ddl-auto: validate
     show-sql: true
+logging:
+   file:
+     name: aegis-ticketing.log
+   level:
+     root: INFO
